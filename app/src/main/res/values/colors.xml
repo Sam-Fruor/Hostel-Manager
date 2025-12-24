@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="brand_primary">#0F5132</color> <color name="brand_primary_dark">#083822</color>
+    <color name="brand_accent">#D4A373</color> <color name="bg_app">#F4F6F9</color> <color name="bg_white">#FFFFFF</color>
+    <color name="bg_card_vacant">#EDF2F7</color>
+
+    <color name="text_dark">#1A202C</color>
+    <color name="text_grey">#718096</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <color name="status_red">#E53E3E</color>
+    <color name="status_green">#38A169</color>
+    
+</resources>

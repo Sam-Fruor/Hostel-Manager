@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_dialog_white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Period"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/brand_primary"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Choose the date range for the statement."
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_marginBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnThisMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="This Month"
+                android:textSize="10sp"
+                android:backgroundTint="#E0E0E0"
+                android:textColor="#333333"
+                android:layout_marginEnd="8dp"
+                android:minHeight="0dp"
+                android:paddingVertical="0dp"/>
+
+            <Button
+                android:id="@+id/btnLastMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Last Month"
+                android:textSize="10sp"
+                android:backgroundTint="#E0E0E0"
+                android:textColor="#333333"
+                android:layout_marginEnd="8dp"
+                android:minHeight="0dp"
+                android:paddingVertical="0dp"/>
+
+            <Button
+                android:id="@+id/btnLast6Months"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="Last 6 Months"
+                android:textSize="10sp"
+                android:backgroundTint="#E0E0E0"
+                android:textColor="#333333"
+                android:minHeight="0dp"
+                android:paddingVertical="0dp"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="From Date"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="#424242"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:id="@+id/tvFromDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Select Start Date"
+            android:textSize="14sp"
+            android:textColor="#212121"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:background="@drawable/bg_input_white"
+            android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+            android:drawableTint="#757575"
+            android:foreground="?attr/selectableItemBackground"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To Date"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:textColor="#424242"
+            android:layout_marginBottom="6dp"/>
+
+        <TextView
+            android:id="@+id/tvToDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Select End Date"
+            android:textSize="14sp"
+            android:textColor="#212121"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="16dp"
+            android:background="@drawable/bg_input_white"
+            android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+            android:drawableTint="#757575"
+            android:foreground="?attr/selectableItemBackground"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGenerateRange"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="GENERATE PDF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:letterSpacing="0.05"
+        android:backgroundTint="@color/brand_primary"
+        android:textColor="#FFFFFF"
+        android:elevation="2dp"/>
+
+</LinearLayout>

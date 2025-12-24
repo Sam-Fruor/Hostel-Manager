@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#F5F7FA"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Tenant"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/brand_primary"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fill in the details to register a new occupant."
+            android:textSize="14sp"
+            android:textColor="@color/text_grey"
+            android:layout_marginBottom="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Details"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:layout_marginBottom="8dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerHostel"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_input_white"
+            android:elevation="2dp"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_input_white"
+            android:elevation="2dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="12dp"
+            android:hint="Full Name"
+            android:textColorHint="#9E9E9E"
+            android:textSize="14sp"
+            android:inputType="textPersonName"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:baselineAligned="false">
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_white"
+                android:elevation="2dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="12dp"
+                android:inputType="phone"
+                android:textSize="14sp"
+                android:textColorHint="#9E9E9E"
+                android:hint="Phone No." />
+
+            <EditText
+                android:id="@+id/etParentPhone"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_white"
+                android:elevation="2dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginBottom="12dp"
+                android:inputType="phone"
+                android:textSize="14sp"
+                android:textColorHint="#9E9E9E"
+                android:hint="Parent Phone" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etCompany"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_input_white"
+            android:elevation="2dp"
+            android:paddingHorizontal="16dp"
+            android:layout_marginBottom="12dp"
+            android:inputType="text"
+            android:textSize="14sp"
+            android:textColorHint="#9E9E9E"
+            android:hint="Occupation / Company" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Room Allocation"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:baselineAligned="false">
+
+            <EditText
+                android:id="@+id/etRoom"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_white"
+                android:elevation="2dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="12dp"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:textColorHint="#9E9E9E"
+                android:hint="Room No." />
+
+            <EditText
+                android:id="@+id/etMoveInDate"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_white"
+                android:elevation="2dp"
+                android:paddingHorizontal="16dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginBottom="12dp"
+                android:focusable="false"
+                android:textSize="14sp"
+                android:textColorHint="#9E9E9E"
+                android:drawableEnd="@android:drawable/ic_menu_my_calendar"
+                android:hint="Move-In Date" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Details (Optional)"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="12dp">
+
+            <Spinner
+                android:id="@+id/spinnerVehicleType"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_input_white"
+                android:elevation="2dp"
+                android:layout_marginEnd="6dp"/>
+
+            <EditText
+                android:id="@+id/etVehicleNumber"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:background="@drawable/bg_input_white"
+                android:elevation="2dp"
+                android:paddingHorizontal="16dp"
+                android:textSize="14sp"
+                android:textColorHint="#9E9E9E"
+                android:hint="Vehicle No. (e.g. UP32 AB)" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Documents (Tap to Upload)"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:layout_marginBottom="32dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginEnd="4dp">
+                <ImageView
+                    android:id="@+id/imgAadharFront"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:background="@drawable/bg_input_white"
+                    android:elevation="2dp"
+                    android:scaleType="centerInside"
+                    app:tint="@color/text_grey"
+                    android:padding="20dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Front" android:textSize="10sp" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginHorizontal="4dp">
+                <ImageView
+                    android:id="@+id/imgAadharBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@android:drawable/ic_menu_camera"
+                    android:background="@drawable/bg_input_white"
+                    android:elevation="2dp"
+                    android:scaleType="centerInside"
+                    app:tint="@color/text_grey"
+                    android:padding="20dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Back" android:textSize="10sp" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginStart="4dp">
+                <ImageView
+                    android:id="@+id/imgForm"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:src="@android:drawable/ic_menu_gallery"
+                    android:background="@drawable/bg_input_white"
+                    android:elevation="2dp"
+                    android:scaleType="centerInside"
+                    app:tint="@color/text_grey"
+                    android:padding="20dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Form" android:textSize="10sp" android:layout_marginTop="4dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSaveTenant"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="SAVE TENANT"
+            android:backgroundTint="@color/brand_primary"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:letterSpacing="0.05"
+            android:textStyle="bold"
+            android:elevation="4dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>

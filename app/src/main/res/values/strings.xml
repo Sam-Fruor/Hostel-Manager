@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Hostel</string>
+
+    <string name="search_hint">Search Tenant...</string>
+    <string name="add_tenant">Add Tenant</string>
+    <string name="pdf_report">PDF Report</string>
+
+    <string-array name="property_filter_options">
+        <item>All Properties</item>
+        <item>Hostel</item>
+        <item>Home</item>
+        <item>Rizz</item>
+        <item>Vacant Rooms</item>
+        <item>Vehicle Record</item>
+    </string-array>
+</resources>

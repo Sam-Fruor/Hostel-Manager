@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@drawable/bg_dialog_white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receive Payment"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/brand_primary"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter the amount received below."
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_input_white"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₹"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:layout_marginEnd="8dp"/>
+
+        <EditText
+            android:id="@+id/etAmount"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:inputType="numberDecimal"
+            android:background="@android:color/transparent"
+            android:hint="0.00"
+            android:textColorHint="#BDBDBD"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_dark"
+            android:maxLines="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Mode"
+        android:textSize="14sp"
+        android:textColor="#757575"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="12dp"/>
+
+    <RadioGroup
+        android:id="@+id/rgPaymentMode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <RadioButton
+            android:id="@+id/rbCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash"
+            android:textSize="16sp"
+            android:textColor="#333333"
+            android:checked="true"
+            android:layout_marginEnd="32dp"/>
+
+        <RadioButton
+            android:id="@+id/rbUPI"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UPI / Online"
+            android:textSize="16sp"
+            android:textColor="#333333"/>
+    </RadioGroup>
+
+</LinearLayout>
